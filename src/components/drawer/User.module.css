@@ -1,0 +1,29 @@
+.userContainer {
+  display: flex;
+  gap: 16px;
+  padding: 8px 16px;
+  align-items: center;
+}
+
+.userImage {
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+}
+
+.userInfoContainer {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.userName {
+  font-weight: 500;
+}
+
+.userRole {
+  font-size: 14px;
+  color: #7B93AF;
+}

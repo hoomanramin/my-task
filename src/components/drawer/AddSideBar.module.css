@@ -1,0 +1,20 @@
+.contentWrapper {
+  padding: 0 24px;
+  margin: 24px 0;
+}
+
+.sectionTitle {
+  font-weight: 500;
+}
+
+.memberCount {
+  margin: 0;
+}
+
+.membersContainer {
+  display: flex;
+  gap: 16px;
+  justify-content: start;
+  flex-wrap: wrap;
+  padding: 0 8px;
+}

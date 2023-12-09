@@ -4,13 +4,20 @@ const DrawerContext = createContext();
 
 const DrawerProvider = ({ children }) => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [isAddDrawerOpen, setIsAddDrawerOpen] = useState(false);
 
   const toggleDrawer = () => {
     setIsDrawerOpen(prevIsOpen => !prevIsOpen);
   };
 
+  const toggleAddDrawer = () => {
+    setIsAddDrawerOpen(prevIsOpen => !prevIsOpen);
+  };
+
   return (
-    <DrawerContext.Provider value={{ isDrawerOpen, toggleDrawer }}>
+    <DrawerContext.Provider
+      value={{ isDrawerOpen, toggleDrawer, toggleAddDrawer, isAddDrawerOpen }}
+    >
       {children}
     </DrawerContext.Provider>
   );

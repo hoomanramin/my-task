@@ -1,0 +1,22 @@
+.addMemberContainer {
+  display: flex;
+  padding: 20px 32px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F1F1F1;
+  margin: 24px 0;
+}
+
+.memberInfo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.userIcon {
+  width: 24px;
+}
+
+.memberCount {
+  margin: 0;
+}
