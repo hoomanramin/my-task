@@ -4,8 +4,8 @@ import SideBar from "../drawer";
 const MainLayout = ({ children }) => {
   return (
     <>
-      {children}
       <SideBar />
+      {children}
     </>
   );
 };
