@@ -3,7 +3,7 @@
   border-radius: 50px;
   display: flex;
   justify-content: space-between;
-  max-width: 104px;
+  max-width: 148px;
   align-items: center;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -16,6 +16,7 @@
 }
 
 .userName {
+  font-size: 12px;
   padding: 8px;
   white-space: nowrap;
   overflow: hidden;
