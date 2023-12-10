@@ -1,34 +1,20 @@
 import React from "react";
 import { useDrawer } from "../../context/DrawerContext";
+import styles from "./DrawerProfile.module.css";
 
 const DrawerProfile = () => {
   const { isAddDrawerOpen } = useDrawer();
+
   return (
-    <div
-      style={{
-        display: "flex",
-        padding: "0 32px",
-        flexDirection: "column",
-        alignItems: "center",
-        gap: "8px",
-      }}
-    >
+    <div className={styles.profileContainer}>
       <img
         src="/images/team.jpg"
         alt="Profile"
         width={"77px"}
-        style={{
-          padding: "6px",
-          border: "1px solid #FFB97B",
-          borderRadius: "50%",
-        }}
+        className={styles.profileImage}
       />
-      <span style={{ fontWeight: 600, fontSize: "20px", color: "#474E55" }}>
-        Team Name
-      </span>
-      {!isAddDrawerOpen && (
-        <span style={{ fontSize: 14, color: "#425B76" }}>22 jan 2023</span>
-      )}
+      <span className={styles.teamName}>Team Name</span>
+      {!isAddDrawerOpen && <span className={styles.dateInfo}>22 Jan 2023</span>}
     </div>
   );
 };

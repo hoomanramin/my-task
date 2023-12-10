@@ -1,0 +1,19 @@
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 32px;
+}
+
+.cancelButton {
+  font-size: 14px;
+  color: #7B93AF;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.createTeamButton {
+  font-size: 14px;
+  color: linear-gradient(92deg, #32A6AE -6.8%, #00BBA7 100.34%);
+  font-weight: 500;
+  text-transform: capitalize;
+}
