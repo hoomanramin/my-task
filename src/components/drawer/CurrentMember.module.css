@@ -3,10 +3,11 @@
   border-radius: 50px;
   display: flex;
   justify-content: space-between;
-  width: 104px;
+  max-width: 104px;
   align-items: center;
   overflow: hidden;
   text-overflow: ellipsis;
+  cursor: pointer;
 }
 
 .userImage {

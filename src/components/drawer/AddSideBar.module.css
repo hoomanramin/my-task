@@ -18,3 +18,8 @@
   flex-wrap: wrap;
   padding: 0 8px;
 }
+
+.customInput {
+  border: none;
+  outline: none;
+}

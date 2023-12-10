@@ -1,28 +1,23 @@
 import React from "react";
 import IconButton from "@mui/material/IconButton";
 import { useDrawer } from "../../context/DrawerContext";
+import styles from "./AddMember.module.css";
+import { useAddMember } from "../../context/MemberContext";
+
 const AddMember = () => {
   const { toggleAddDrawer } = useDrawer();
+  const { currentMember } = useAddMember();
   return (
-    <div
-      style={{
-        display: "flex",
-        padding: "20px 32px",
-        alignItems: "center",
-        justifyContent: "space-between",
-        backgroundColor: "#F1F1F1",
-        margin: "24px 0",
-      }}
-    >
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          gap: "20px",
-        }}
-      >
-        <img src="/images/users.png" alt="usericon" width={"24px"} />
-        <span>6 member</span>
+    <div className={styles.addMemberContainer}>
+      <div className={styles.memberInfo}>
+        <img
+          src="/images/users.png"
+          alt="usericon"
+          className={styles.userIcon}
+        />
+        <span className={styles.memberCount}>
+          {currentMember.length} member
+        </span>
       </div>
       <IconButton onClick={() => toggleAddDrawer()}>
         <img src="/images/adduser.png" alt="adduser" width={"24px"} />
