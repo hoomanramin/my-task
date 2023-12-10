@@ -5,10 +5,12 @@
 
 .sectionTitle {
   font-weight: 500;
+  color: #425B76;
 }
 
 .memberCount {
-  margin: 0;
+  margin: 0 8px;
+  font-size: 12px;
 }
 
 .membersContainer {

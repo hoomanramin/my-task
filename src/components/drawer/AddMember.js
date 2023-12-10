@@ -16,7 +16,7 @@ const AddMember = () => {
           className={styles.userIcon}
         />
         <span className={styles.memberCount}>
-          {currentMember.length} member
+          {currentMember.length} Members
         </span>
       </div>
       <IconButton onClick={() => toggleAddDrawer()}>

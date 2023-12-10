@@ -23,8 +23,12 @@ const DrawerProfile = () => {
           borderRadius: "50%",
         }}
       />
-      <span style={{ fontWeight: 600 }}>Team Name</span>
-      {!isAddDrawerOpen && <span style={{ fontSize: 14 }}>22 jan 2023</span>}
+      <span style={{ fontWeight: 600, fontSize: "20px", color: "#474E55" }}>
+        Team Name
+      </span>
+      {!isAddDrawerOpen && (
+        <span style={{ fontSize: 14, color: "#425B76" }}>22 jan 2023</span>
+      )}
     </div>
   );
 };

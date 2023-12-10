@@ -58,7 +58,8 @@ const AddSideBar = () => {
             placeholder="Search users..."
           />
         </div>
-        <div style={{ marginTop: "16px" }}>
+        <hr style={{ borderTop: "1px solid #E2E2E8" }} />
+        <div style={{ marginTop: "8px" }}>
           {filteredUsers.map(item => (
             <User
               key={item.id}
