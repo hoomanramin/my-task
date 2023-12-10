@@ -1,15 +1,23 @@
-import { createContext, useContext, useState, useEffect } from "react";
+import {
+  createContext,
+  useContext,
+  useState,
+  useEffect,
+  useCallback,
+} from "react";
 
 const UserContext = createContext();
 
 const UserProvider = ({ children }) => {
   const [users, setUsers] = useState([]);
-  const [filteredUsers, setFilteredUsers] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
 
-  const onChangeHandler = e => {
-    setSearchTerm(e.target.value);
-  };
+  const onChangeHandler = useCallback(
+    e => {
+      setSearchTerm(e.target.value);
+    },
+    [setSearchTerm]
+  );
 
   const getUser = async () => {
     try {

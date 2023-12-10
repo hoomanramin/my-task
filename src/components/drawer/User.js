@@ -18,7 +18,9 @@ const User = ({ name, username, id }) => {
   };
   return (
     <div
-      className={styles.userContainer}
+      className={
+        isAddDrawerOpen ? styles.userContainerPointer : styles.userContainer
+      }
       onClick={isAddDrawerOpen ? handleAddMember : null}
     >
       <img

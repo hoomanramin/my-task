@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./CurrentMember.module.css";
 import { useAddMember } from "../../context/MemberContext";
-import CloseIcon from "@mui/icons-material/Close";
+
 const CurrentMember = ({ name, id }) => {
   const { removeMemberHandler } = useAddMember();
   const [isHovered, setIsHovered] = useState(false);
@@ -28,7 +28,11 @@ const CurrentMember = ({ name, id }) => {
       onMouseLeave={handleLeave}
     >
       {isHovered ? (
-        <CloseIcon sx={{ ml: "8px" }} />
+        <img
+          src={"/images/close.png"}
+          alt="user"
+          className={styles.userImage}
+        />
       ) : (
         <img src={"/images/team.jpg"} alt="user" className={styles.userImage} />
       )}
